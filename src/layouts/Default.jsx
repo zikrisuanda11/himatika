@@ -1,12 +1,13 @@
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import Footer from '../components/Footer'
 
 const navigation = [
-  { name: 'About', href: '#' },
+  { name: 'About', href: '#about' },
   { name: 'Departement', href: '#departement' },
-  { name: 'Activities', href: '#' },
-  { name: 'Members', href: '#' },
+  { name: 'Activities', href: '#proker' },
+  { name: 'Members', href: '#anggota' },
 ]
 
 export default function Default({ children }) {
@@ -51,7 +52,7 @@ export default function Default({ children }) {
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">himatika</span>
                 <img
-                  className="h-8 w-auto"
+                  className="h-12 w-auto"
                   src="/icons/hima.png"
                   alt=""
                 />
@@ -120,6 +121,7 @@ export default function Default({ children }) {
           />
         </div>
       </div>
+      <Footer/>
     </div>
   )
 }
